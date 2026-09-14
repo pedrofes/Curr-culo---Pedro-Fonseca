@@ -1,3 +1,8 @@
+
+* {
+    box-sizing: border-box;
+}
+
 p{
     padding: 20px;
     font-size: 18px;
@@ -26,13 +31,13 @@ footer{
     padding: 20px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 100px;
+    font-weight: 400;
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(11, 11, 12);
 }
 
 h1{
-    padding: 20px;
+    padding: 10px;
     color: rgb(11, 11, 12);
     font-family: "Times New Roman";
 }
@@ -48,5 +53,52 @@ body{
 }
 
 .profissao{
-    font-size: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.nome{
+    display: flex;
+    justify-content: center;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.cabeçalho{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cabeçalho h1 {
+    padding: 10px;
+    margin: 0px;
+}
+
+.cabeçalho p {
+    padding: 8px;
+    margin: 0 px;
+}
+
+.contato p {
+    flex: 1;
+}
+
+.contato p:first-child {
+    text-align: left;
+}
+
+.contato p:nth-child(2) {
+    text-align: center;
+}
+
+.contato p:last-child {
+    text-align: right;
 }
