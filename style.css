@@ -16,6 +16,7 @@ h2{
 
 h3{
     padding: 20px;
+    padding-bottom: 5px;
     font-size: 22px;
     font-weight: bold;
 }
@@ -79,12 +80,12 @@ body{
 
 .cabeçalho h1 {
     padding: 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 .cabeçalho p {
     padding: 8px;
-    margin: 0 px;
+    margin: 0;
 }
 
 .contato p {
@@ -101,4 +102,90 @@ body{
 
 .contato p:last-child {
     text-align: right;
+}
+
+.sobre{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.formacao{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.habilidades {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.idiomas {
+    margin-top: 0;
+}
+
+.portcomunicacao{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.aprendendo{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.portfolio{
+    margin-top: 0;
+}
+
+@media(max-width: 600px){
+    
+    .cabeçalho{
+        align-items: center;
+    }
+    
+    .contato{
+        margin-top: 40px;
+    }
+    
+    .contato{
+        flex-direction: column;
+    }
+
+    .contato p{
+        text-align: center;
+        flex: none;
+    }
+
+    .contato p:last-child {
+        text-align: center;
+    }
+
+    .nome{
+        text-align: center;
+    }
+
+    .profissao{
+        text-align: center;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    section p {
+    text-align: justify;
+    }
+
+
+}
+
+
+h2 {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+section p {
+    margin-top: 5px;
+    padding-top: 5px;
 }
