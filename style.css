@@ -1,81 +1,83 @@
+/* ========================================
+   1. CONFIGURAÇÕES GERAIS
+   ======================================== */
 
 * {
     box-sizing: border-box;
 }
 
-p{
+body {
+    background-image: url("assets/images/jornalismo_dev.png");
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+/* ========================================
+   2. ELEMENTOS HTML GERAIS
+   ======================================== */
+
+p {
     padding: 20px;
     font-size: 18px;
     line-height: 1.5;
 }
 
-h2{
-    font-size: 32px;
-    padding: 20px;
+h1 {
+    padding: 10px;
+    color: rgb(11, 11, 12);
 }
 
-h3{
+h2 {
+    font-size: 32px;
+    padding: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+h3 {
     padding: 20px;
     padding-bottom: 5px;
     font-size: 22px;
     font-weight: bold;
 }
 
-section {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin-top: 20px;
+a {
+    text-decoration: none;
 }
 
-footer{
-    margin-top: 20px;
-    padding: 20px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   3. ESTILOS COMPARTILHADOS
+   ======================================== */
+
+header,
+section,
+footer {
     background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+
+/* ========================================
+   4. HEADER
+   ======================================== */
+
+header {
     color: rgb(11, 11, 12);
 }
 
-h1{
-    padding: 10px;
-    color: rgb(11, 11, 12);
-    font-family: "Times New Roman";
-}
-
-header{
-    background-color: rgba(255, 255, 255, 0.8);
-    color: rgb(11, 11, 12);
-}
-
-body{
-    background-image: url("assets/images/jornalismo_dev.png");
-    font-family: "Times New Roman";
-}
-
-.profissao{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.nome{
-    display: flex;
-    justify-content: center;
-}
-
-.contato{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.cabeçalho{
+.cabeçalho {
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .cabeçalho h1 {
@@ -86,6 +88,23 @@ body{
 .cabeçalho p {
     padding: 8px;
     margin: 0;
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+}
+
+.profissao {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 .contato p {
@@ -104,12 +123,30 @@ body{
     text-align: right;
 }
 
-.sobre{
-    margin-top: 0;
-    margin-bottom: 10px;
+
+/* ========================================
+   5. CONTEÚDO PRINCIPAL
+   ======================================== */
+
+section {
+    padding: 20px;
+    margin-top: 20px;
 }
 
-.formacao{
+section p {
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+
+/* ========================================
+   6. AJUSTES ESPECÍFICOS DAS SEÇÕES
+   ======================================== */
+
+.sobre,
+.formacao,
+.portcomunicacao,
+.aprendendo {
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -123,35 +160,40 @@ body{
     margin-top: 0;
 }
 
-.portcomunicacao{
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.aprendendo{
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.portfolio{
+.portfolio {
     margin-top: 0;
 }
 
-@media(max-width: 600px){
-    
-    .cabeçalho{
+
+/* ========================================
+   7. FOOTER
+   ======================================== */
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 60px;
+    color: rgb(11, 11, 12);
+}
+
+
+/* ========================================
+   8. RESPONSIVIDADE
+   Media Queries ficam no final do arquivo
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .cabeçalho {
         align-items: center;
     }
-    
-    .contato{
+
+    .contato {
         margin-top: 40px;
-    }
-    
-    .contato{
         flex-direction: column;
     }
 
-    .contato p{
+    .contato p {
         text-align: center;
         flex: none;
     }
@@ -160,32 +202,19 @@ body{
         text-align: center;
     }
 
-    .nome{
+    .nome {
         text-align: center;
     }
 
-    .profissao{
+    .profissao {
         text-align: center;
     }
 
-    footer{
+    footer {
         text-align: center;
     }
 
     section p {
-    text-align: justify;
+        text-align: justify;
     }
-
-
-}
-
-
-h2 {
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-}
-
-section p {
-    margin-top: 5px;
-    padding-top: 5px;
 }
