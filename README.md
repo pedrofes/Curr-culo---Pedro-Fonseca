@@ -44,7 +44,7 @@ html-01/
 
 O projeto poderá ser acessado online por meio do GitHub Pages.
 
-> Link da página será adicionado após a publicação.
+[Acesse o projeto online](https://pedrofes.github.io/Curr-culo---Pedro-Fonseca/)
 
 ## Status
 
